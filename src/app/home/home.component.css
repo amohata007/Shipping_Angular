@@ -1,0 +1,611 @@
+/*--------------------
+   1. BASE CSS
+----------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+a:focus,
+a:hover {
+    outline: 0 solid;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3c4a62;
+    margin: 0 0 15px;
+    font-weight: 700;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: 400;
+    color: #687284;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+a {
+    color: #5d6b82;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+    overflow: hidden;
+}
+
+.absulute {
+    position: absolute;
+}
+
+.v-center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.content-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.flex-v-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.social-bookmark li {
+    display: inline;
+}
+
+.social-bookmark li a {
+    background: #d7d7d7 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    margin: 0 2px;
+    padding-top: 9px;
+    text-align: center;
+    width: 40px;
+}
+
+.social-bookmark li a:hover {
+    background: #f39c12 none repeat scroll 0 0;
+    color: #fff;
+}
+
+.inline li {
+    display: inline;
+}
+
+.inline-block li {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.navbar-toggle {
+    border: 2px solid #f39c12;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background: #f39c12 none repeat scroll 0 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.border-left {
+    border-left: 1px solid #ddd;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+
+.border-top {
+    border-top: 1px solid #ddd;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.area-title {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.area-title h2 {
+    display: inline-block;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.area-title h2::before,
+.area-title h2::after {
+    /* background: rgba(0, 0, 0, 0) url("img/title-border.png") repeat scroll 0 0; */
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+.area-title h2::after {
+    background: #f39c12 none repeat scroll 0 0;
+    height: 4px;
+    width: 20px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.padding-top {
+    padding-top: 100px;
+}
+
+.padding-bottom {
+    padding-bottom: 100px;
+}
+
+.padding-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.padding-100-50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.gray-bg {
+    background: #f7f9fc;
+}
+
+.deep-gray-bg {
+    background: #eff1ff;
+}
+
+.dark-bg {
+    background: #5d6b82;
+    color: #ffffff;
+}
+
+.red-bg {
+    background: #f39c12;
+    color: #ffffff;
+}
+
+.blue-bg {
+    background: #0083ff;
+    color: #ffffff;
+}
+
+.soft-blue-bg {
+    background: #7db9e8;
+    color: #ffffff;
+}
+
+.dark-bg .area-title h2 {
+    color: #ffffff;
+}
+/*--------------------------
+    2. TOP AREA
+---------------------------*/
+
+.top-area {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.top-area-bg {
+    /* background: rgba(0, 0, 0, 0) url("img/slider/slide_1.jpg") no-repeat scroll center center / cover; */
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-area-bg::after {
+    background: #3c4147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/* slide-area */
+
+.slider {
+    height: 100vh;
+}
+
+/* end slide-area */
+
+/* ----------------------------
+    3. BLOG AREA
+------------------------------ */
+
+.single-blog {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 7px #ddd;
+    box-shadow: 0 3px 7px #ddd;
+    overflow: hidden;
+}
+
+.blog-details {
+    background: #fff none repeat scroll 0 0;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.blog-meta {
+    background: #f39c12 none repeat scroll 0 0;
+    border-radius: 0 50px 50px 0;
+    font-size: 24px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: -25px;
+    width: 70px;
+}
+
+.blog-meta a {
+    color: #fff;
+    display: block;
+    height: 100%;
+    padding-top: 13px;
+    width: 100%;
+}
+
+.blog-details h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.read-more {
+    background: #5d6b82 none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    margin-top: 15px;
+    padding: 7px 25px;
+    text-align: center;
+    width: 140px;
+}
+
+.read-more:hover,
+.read-more:focus {
+    background: #f39c12;
+    color: #fff;
+}
+
+.blog-details h3 a {
+    color: #3c4a62;
+}
+
+.blog-details h3 a:hover,
+.blog-details h3 a:focus {
+    color: #f39c12;
+}
+
+
+
+
+
+
+
+
+/* Start About Area css
+=========================================================================================== */
+/* line 4, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.feature-area {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+  /* line 4, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+  .feature-area {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 10, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.feature-area .section-title-wrap h4 {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* line 15, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.feature-area .section-title-wrap p {
+  margin-bottom: 40px;
+}
+
+/* line 21, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single-feature {
+  margin-bottom: 60px;
+  transition: all 300ms linear 0s;
+}
+
+/* line 24, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single-feature h4 {
+  margin-top: 25px;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+/* line 30, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single-feature p {
+  margin-bottom: 20px;
+}
+
+/* line 33, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single-feature a {
+  display: inline-block;
+  color: #262533;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: all 300ms linear 0s;
+}
+
+/* line 42, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single-feature a:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 13px;
+  width: 40px;
+  height: 3px;
+  background: #e72727;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear 0s;
+}
+
+/* line 56, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single-feature:hover a {
+  padding-left: 60px;
+}
+
+/* line 58, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single-feature:hover a:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Start About Area css
+=========================================================================================== */
+/* Start About Area css
+=========================================================================================== */
+/* line 72, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.about-area {
+  /* background: url("./assets/images/about/about-bg.png") no-repeat center; */
+  background-position: top center;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+  /* line 72, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+  .about-area {
+    padding-bottom: 10px;
+  }
+}
+
+/* line 80, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.about-area .activity .activity_box {
+  margin-bottom: 30px;
+  border-bottom: 3px solid #e4e7e9;
+  margin-bottom: 70px;
+  transition: all 300ms linear 0s;
+}
+
+/* line 85, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.about-area .activity .activity_box h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* line 91, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.about-area .activity .activity_box p {
+  margin-bottom: 20px;
+}
+
+/* line 94, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.about-area .activity .activity_box:hover {
+  border-bottom: 3px solid #e72727;
+}
+
+/* line 101, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand {
+  text-align: center;
+  padding: 20px 15px;
+  transition: all 300ms linear 0s;
+  border: 1px solid #e4e7e9;
+}
+
+@media (max-width: 991px) {
+  /* line 101, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+  .single_brand {
+    border: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+/* line 110, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand:nth-child(1), .single_brand:nth-child(2), .single_brand:nth-child(3) {
+  border-top: 0px;
+}
+
+/* line 115, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand:nth-child(4), .single_brand:nth-child(5), .single_brand:nth-child(6) {
+  border-bottom: 0px;
+}
+
+/* line 120, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand:nth-child(1), .single_brand:nth-child(4) {
+  border-left: 0px;
+}
+
+/* line 124, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand:nth-child(3), .single_brand:nth-child(6) {
+  border-right: 0px;
+}
+
+/* line 128, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.3;
+  transition: all 300ms linear 0s;
+}
+
+/* line 133, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand:hover {
+  background: #ffffff;
+  box-shadow: 0px 10px 40px -14px #e72727;
+}
+
+/* line 136, /Applications/MAMP/htdocs/naim/color-lib/160 lagoon Logistics/scss/_home.scss */
+.single_brand:hover img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* End About Area
+=========================================================================================== */
