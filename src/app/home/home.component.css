@@ -609,6 +609,12 @@ input:-webkit-autofill:focus {
 
 /* End About Area
 =========================================================================================== */
+
+
+.promo-top-area {
+    /* background: rgba(0, 0, 0, 0) url("./assets/imgages/promo/promo_top_bg.png") no-repeat scroll right 5% bottom 50% / 40% auto; */
+}
+
 .promo-img {
     height: 400px;
     width: 700px;
@@ -637,5 +643,4 @@ input:-webkit-autofill:focus {
     top: 0;
     width: 65px;
 }
-
 
