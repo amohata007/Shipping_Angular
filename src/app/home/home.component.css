@@ -609,5 +609,33 @@ input:-webkit-autofill:focus {
 
 /* End About Area
 =========================================================================================== */
+.promo-img {
+    height: 400px;
+    width: 700px;
+}
+
+.single-promo {
+    margin-bottom: 50px;
+    padding: 20px 20px 20px 80px;
+    position: relative;
+}
+
+.promo-area .row > div.col-lg-4 .single-promo:last-child {
+    margin-bottom: 0;
+}
+
+.promo-icon {
+    background: #f4f7f9 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #f39c12;
+    font-size: 24px;
+    height: 65px;
+    left: 0;
+    padding-top: 21px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 65px;
+}
 
 
