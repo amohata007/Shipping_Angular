@@ -3,6 +3,19 @@
   width: 100%;
 }
 
+.form {
+  background-color: rgb(139, 181, 236);
+  padding: 30px;
+  font-family: fantasy
+  
+}
+
+.form-img {
+  height: 300px;
+  width: 300px;
+  margin-top: 90px;
+}
+
 
 
 
