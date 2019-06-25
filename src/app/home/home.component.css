@@ -644,3 +644,7 @@ input:-webkit-autofill:focus {
     width: 65px;
 }
 
+
+.about-area{
+  background-color: lightcyan;
+}
