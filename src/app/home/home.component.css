@@ -648,3 +648,8 @@ input:-webkit-autofill:focus {
 .about-area{
   background-color: rgb(102, 105, 199);
 }
+
+
+.carousel-caption{
+  margin-top: -380px;
+}

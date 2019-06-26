@@ -28,7 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbCollapseModule,
     AngularFontAwesomeModule,
-    ReactiveFormsModule,    
+    ReactiveFormsModule,
     MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],

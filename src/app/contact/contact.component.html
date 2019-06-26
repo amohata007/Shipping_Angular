@@ -5,9 +5,9 @@
 		<img class="img" src="./assets/images/contact.jpg">
 	</div>
 </div>
-
+<!--
 <section class="form">
-	<!-- <div class="jumbotron"> -->
+	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -39,19 +39,11 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label>Password</label>
-							<input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-							<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-								<div *ngIf="f.password.errors.required">Password is required</div>
-								<div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
-							</div>
-						</div>
-						<div class="form-group">
 							<label>Message</label>
 							<input type="text" formControlName="message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" />
 							<div *ngIf="submitted && f.message.errors" class="invalid-feedback">
 								<div *ngIf="f.message.errors.required">Message is required</div>
-								<!-- <div *ngIf="f.message.errors.minlength">Password must be at least  characters</div> -->
+								<div *ngIf="f.message.errors.minlength">Password must be at least  characters</div>
 							</div>
 						</div>
 						<div class="form-group">
@@ -61,7 +53,42 @@
 				</div>
 			</div>
 		</div>
-	<!-- </div> -->
-</section>
+	</div>
+</section> -->
 
 
+<div class="container">
+    <h1 class="title">Contact Form</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="contact">
+        <h3 class="contact-us">Contact Us</h3>
+        <div class="alert">Your message has been sent!</div>
+        <form id="contactForm" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <p class="name-field">
+            <label>Name <span>*</span></label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p class="company-field">
+            <label>Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p class="email-field">
+            <label>Email <span>*</span></label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p class="phone-field">
+            <label>Phone</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="message-field full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="required-field">Required field <span>*</span></p>
+          <p class="submit-button">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
