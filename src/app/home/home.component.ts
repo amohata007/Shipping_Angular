@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
     var a = 0;
     $(window).scroll(function() {
 
+// tslint:disable-next-line: prefer-const
       var oTop = $('#cntr').offset().top - window.innerHeight;
       if (a == 0 && $(window).scrollTop() > oTop) {
         $('.counter').each(function() {
