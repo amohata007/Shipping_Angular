@@ -272,7 +272,7 @@
 .about h1 span {color: #E41B17}
 .about h2 span {color: #E41B17}
 /*End Section About*/
-
+.inner h3 span {color: #E41B17}
 /*Start Section Our Team*/
 .our-team
 {
@@ -290,4 +290,7 @@
 .our-team .person {margin-bottom: 40px}
 /*End Section Our Team*/
 
-
+.img-circle {
+  width: 200px;
+  height: 200px;
+}
