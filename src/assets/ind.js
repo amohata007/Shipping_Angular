@@ -13,12 +13,10 @@ firebase.initializeApp(config);
 var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
-
+window.onload=function(){
 var el = document.getElementById('contactForm');
-if(el){
-  el.addEventListener('submit', submitForm);
+el.addEventListener('submit', submitForm);
 }
-
 // Submit form
 function submitForm(e){
 e.preventDefault();
