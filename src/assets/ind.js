@@ -6,7 +6,7 @@ var config = {
   projectId: "prac-6398b",
   storageBucket: "",
   messagingSenderId: "17645999972"  
-};
+}; 
 firebase.initializeApp(config);
 
 // Reference messages collection
